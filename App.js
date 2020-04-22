@@ -21,7 +21,10 @@ export default function App() {
         data={user}
         renderItem={({ item: userItem }) => (
           <View>
-            <Image source={{ uri: userItem.avatar }} />
+            <Image
+              style={{ height: 64, width: 64 }}
+              source={{ uri: userItem.avatar }}
+            />
             <View>
               <Text>{`${userItem.first_name} ${userItem.last_name}`}</Text>
             </View>
